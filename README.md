@@ -8,3 +8,6 @@
 * An easy to edit variables script
 * No more Shakespeare
 * Progress indicators
+* Improved color output
+* A Dry Run Feature:
+    - prints what would happen
