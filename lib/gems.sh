@@ -10,9 +10,9 @@ do_exec git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 # export RBENV_ROOT="/usr/local/var/rbenv"
 
 # Add to bash_profile
-do_exec echo '# added by installfest script' >> ~/.bash_profile
-do_exec echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-do_exec echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+do_exec "echo '# added by installfest script' >> ~/.bash_profile"
+do_exec "echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile"
+do_exec "echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile"
 
 # enable shims and autocompletion
 do_exec export PATH="$HOME/.rbenv/bin:$PATH"
@@ -35,7 +35,7 @@ do_exec git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins
 
 # Our gems to install
 # skip documentation
-do_exec echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+do_exec "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
 
 # TODO (phlco) replace ~/.rbenv with $RBENV_ROOT
 do_exec touch ~/.rbenv/default-gems
@@ -58,5 +58,5 @@ gemlist=(
 )
 
 for gem in ${gemlist[@]}; do
-  do_exec echo "${gem}" >> ~/.rbenv/default-gems
+  do_exec "echo '${gem}' >> ~/.rbenv/default-gems"
 done

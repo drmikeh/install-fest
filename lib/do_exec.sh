@@ -4,6 +4,6 @@ function do_exec() {
     log_setting "DRY_RUN:" "$*"
   else
     log_setting "EXEC: " "$*"
-    exec $*
+    eval $*
   fi
 }
