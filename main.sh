@@ -3,22 +3,23 @@
 source "./variables.sh"
 source "./lib/cl_options.sh"        # inline execution
 source "./lib/logging.sh"
-source "./lib/greeting.sh"
-source "./lib/exec.sh"
+source "./lib/do_exec.sh"
 source "./lib/text_formatting.sh"   # inline execution
 
 # Send STDOUT and STDERR to the logfile
 exec > >(tee $LOGFILE); exec 2>&1
 
 # log_test
+# source "./lib/simple_test.sh"
 
-greeting
-pause "Continue with Install Fest"
-
-# log_banner "Shell Setup"
+source "./lib/greeting.sh"
 
 source "./lib/check_cl_tools.sh"
+# source "./lib/github.sh"
+source "./lib/brew.sh"
+source "./lib/git_config.sh"
+source "./lib/gems.sh"
+source "./lib/ruby.sh"
+source "./lib/node.sh"
 
-closing
-
-# do_exec ls -als
+source "./lib/closing.sh"

@@ -18,29 +18,29 @@ function log_banner() {
 }
 
 function log_setting() {
-  echo "${BLUE}$1 ${CYAN}$2 ${RESET}"
+  echo "${GREEN}($SECTION) ${BLUE}$1 ${CYAN}$2 ${RESET}"
 }
 
 function log_info() {
   echo ""
-  echo "${CYAN}>>>>    $* ${RESET}"
+  echo "${GREEN}($SECTION) ${CYAN} >>>>    $* ${RESET}"
 }
 
 function log_debug() {
   if [[ -n "$VERBOSE" && "$VERBOSE" != "false" ]]; then
     echo ""
-    echo "${BLUE}>>>>    $* ${RESET}"
+    echo "${GREEN}($SECTION) ${BLUE} >>>>    $* ${RESET}"
   fi
 }
 
 function log_warn() {
   echo ""
-  echo "${MAGENTA}>>>>    $* ${RESET}"
+  echo "${GREEN}($SECTION) ${MAGENTA} >>>>    $* ${RESET}"
 }
 
 function log_error() {
   echo ""
-  echo "${RED}>>>>    $* ${RESET}"
+  echo "${GREEN}($SECTION) ${RED} >>>>    $* ${RESET}"
 }
 
 function pause() {
@@ -55,6 +55,8 @@ function log_test() {
   echo "${YELLOW}YELLOW${RESET}"
   echo "${MAGENTA}MAGENTA${RESET}"
   echo "${CYAN}CYAN${RESET}"
+
+  SECTION="TEST"
 
   log_banner "Banner Message"
 

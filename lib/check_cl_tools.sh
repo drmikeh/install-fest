@@ -1,4 +1,6 @@
 # Check that command line tools are installed
+
+SECTION="CL TOOLS"
 log_banner "Checking Command Line Tools"
 
 case $OS_VERSION in
