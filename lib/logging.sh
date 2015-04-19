@@ -4,7 +4,7 @@
 
 mkdir -p $LOGFOLDER
 
-# Echo to STDERR
+# Echo to STDOUT
 function log() {
   echo "$1"
 }

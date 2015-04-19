@@ -11,3 +11,8 @@
 * Improved color output
 * A Dry Run Feature:
     - prints what would happen
+
+
+## TODO:
+
+* Add tests using Docker and VirtualBox
