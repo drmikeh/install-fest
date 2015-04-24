@@ -12,22 +12,17 @@ do_exec git config --global user.github  $github_name
 do_exec git config --global user.email   $github_email
 
 # set colors
-do_exec git config --global color.ui always
-
-do_exec git config --global color.branch.current   "green reverse"
-do_exec git config --global color.branch.local     green
-do_exec git config --global color.branch.remote    yellow
-
-do_exec git config --global color.status.added     green
-do_exec git config --global color.status.changed   yellow
-do_exec git config --global color.status.untracked red
+do_exec git config --global color.ui auto
 
 # set editor
 # change to `subl -w` if you want to open merge messages in Sublime.
-do_exec git config --global core.editor "subl -w"
+do_exec git config --global core.editor "subl -n -w"
 
 # default branch to push to
 do_exec git config --global push.default current
 
 # set global gitignore
 do_exec git config --global core.excludesfile ~/.gitignore_global
+
+# Setup OS X Keychain
+do_exec git config --global credential.helper osxkeychain

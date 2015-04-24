@@ -9,13 +9,10 @@ source "./lib/text_formatting.sh"   # inline execution
 # Send STDOUT and STDERR to the logfile
 exec > >(tee $LOGFILE); exec 2>&1
 
-# log_test
-# source "./lib/simple_test.sh"
-
 source "./lib/greeting.sh"
 
 source "./lib/check_cl_tools.sh"
-# source "./lib/github.sh"
+source "./lib/github.sh"
 source "./lib/brew.sh"
 source "./lib/git_config.sh"
 source "./lib/gems.sh"

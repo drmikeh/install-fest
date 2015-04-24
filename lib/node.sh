@@ -1,7 +1,8 @@
 SECTION="NODE"
 log_banner "$SECTION"
 
-do_exec brew install node
+# TODO: replace with nvm
+# do_exec brew install node
 
 packageList=(
   # CLI tool for scaffolding out Yeoman projects
@@ -35,9 +36,11 @@ packageList=(
   express
 
   # less
-  # gulp
+  gulp
   # browserify
-  # generator-gulp-webapp
+  generator-gulp-webapp
+  generator-gulp-angular
+  generator-angular-fullstack
 )
 
 for package in ${packageList[@]}; do
