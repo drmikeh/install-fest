@@ -10,9 +10,9 @@ do_exec git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 # export RBENV_ROOT="/usr/local/var/rbenv"
 
 # Add to bash_profile
-do_exec "echo '# added by installfest script' >> ~/.bash_profile"
-do_exec "echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile"
-do_exec "echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile"
+# do_exec "echo '# added by installfest script' >> ~/.bash_profile"
+# do_exec "echo 'export PATH=$HOME/.rbenv/bin:$PATH' >> ~/.bash_profile"
+# do_exec "echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile"
 
 # enable shims and autocompletion
 do_exec export PATH="$HOME/.rbenv/bin:$PATH"

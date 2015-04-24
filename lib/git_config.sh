@@ -16,7 +16,7 @@ do_exec git config --global color.ui auto
 
 # set editor
 # change to `subl -w` if you want to open merge messages in Sublime.
-do_exec git config --global core.editor "subl -n -w"
+do_exec git config --global core.editor "'subl -n -w'"
 
 # default branch to push to
 do_exec git config --global push.default current
