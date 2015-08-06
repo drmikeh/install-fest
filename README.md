@@ -27,7 +27,3 @@ git --version
 ruby --version
 node --version
 ```
-
-## TODO:
-
-* Add tests using Docker and VirtualBox
