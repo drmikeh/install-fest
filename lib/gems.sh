@@ -49,7 +49,7 @@ gemlist=(
   # jasmine         # JavaScript testing
   pry             # alternative to the standard IRB shell
   # pry-coolline    # live syntax highlighting for the Pry REPL
-  # rails           # full stack, Web application framework
+  rails           # full stack, Web application framework
   rspec           # testing tool for Ruby
   sinatra         # a DSL for quickly creating web applications in Ruby
   sinatra-contrib # common Sinatra extensions

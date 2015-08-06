@@ -44,6 +44,8 @@ packageList=(
 
   # Best MEAN Stack generator
   generator-angular-fullstack
+
+  jasmine-node
 )
 
 for package in ${packageList[@]}; do
