@@ -7,7 +7,7 @@ read -p "Enter your First Name: "    fname
 read -p "Enter your Last Name: "     lname
 read -p "Github Username: "          github_name
 read -p "Github Email: "             github_email
-read -s -p "Github Password: "       github_password
+# read -s -p "Github Password: "       github_password
 
 # SSH keys establish a secure connection between your computer and GitHub
 # This script follows these instructions
