@@ -46,6 +46,8 @@ packageList=(
   generator-angular-fullstack
 
   jasmine-node
+
+  jscs
 )
 
 for package in ${packageList[@]}; do

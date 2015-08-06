@@ -28,6 +28,18 @@ cd ~/Downloads/install-fest-master
 ./install-fest
 ```
 
+## How to Verify
+
+Open a new terminal window and verify that you have a pretty Bash prompt.
+Then run the following:
+
+```
+brew list
+git --version
+ruby --version
+node --version
+```
+
 ## TODO:
 
 * Add tests using Docker and VirtualBox
