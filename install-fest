@@ -33,6 +33,8 @@ source "./lib/node.sh"
 
 do_exec wdi-init
 
+source "./lib/bash_prompt.sh"
+
 source "./lib/closing.sh"
 
 send_mail "mike.hopper@ga.co" "install-fest closing from $USER_NAME"
