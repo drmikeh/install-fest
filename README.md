@@ -14,7 +14,11 @@
 
 ## How to Run
 
-Use the following link to download the zip file containing these scripts.
+Go to GitHub to download a zip file of this project.
+
+URL: [install-fest](https://github.com/drmikeh/install-fest)
+
+Alternatively, you can download the zip file from the command line:
 
 ```
 cd /tmp
