@@ -1,6 +1,6 @@
 # LOGFOLDER="$HOME/.wdi";
 LOGFOLDER=~/.wdi
-LOGFILE="$LOGFOLDER/install.log"
+LOGFILE="$LOGFOLDER/install-fest.log"
 
 #
 # What We Know
