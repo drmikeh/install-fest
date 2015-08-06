@@ -12,6 +12,7 @@ exec > >(tee $LOGFILE); exec 2>&1
 source "./lib/greeting.sh"
 
 source "./lib/check_cl_tools.sh"
+
 source "./lib/github.sh"
 source "./lib/brew.sh"
 source "./lib/git_config.sh"

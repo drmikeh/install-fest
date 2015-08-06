@@ -14,10 +14,16 @@
 
 ## How to Run
 
-Use the following link to download a zip file containing these scripts.
+Use the following link to download the zip file containing these scripts.
 
 ```
-
+cd /tmp
+mkdir wdi
+cd wdi
+wget https://github.com/drmikeh/install-fest/archive/0.1.0.zip -O install-fest.zip
+unzip install-fest.zip
+cd install-fest-0.1.0
+./wdi.sh
 ```
 
 

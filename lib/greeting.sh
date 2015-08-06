@@ -16,6 +16,7 @@ log
 log_setting "Script execution began at:" "$(date)"
 log_setting "Force:"   "$FORCE"
 log_setting "Verbose:" "$VERBOSE"
+log_setting "LOGFILE:" "$LOGFILE"
 log_setting "Operating System Type:"    "$OSTYPE"
 log_setting "Operating System Version:" "$OS_VERSION"
 log_setting "Machine Type:"             "$MACHTYPE"

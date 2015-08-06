@@ -4,7 +4,7 @@
 SECTION="BREW"
 log_banner "$SECTION"
 
-$(which -s brew)
+$(/usr/bin/which -s brew)
 if [[ $? != 0 ]]; then
   log 'Installing Homebrew...'
   # piping echo to simulate hitting return in the brew install script
@@ -26,6 +26,9 @@ do_exec brew upgrade
 # These formulae duplicate software provided by OS X
 # though may provide more recent or bugfix versions.
 do_exec brew tap homebrew/dupes
+
+# GA WDI formulae
+do_exec brew tap drmikeh/ga-extras
 
 packagelist=(
   # Autoconf is an extensible package of M4 macros that produce shell scripts to
@@ -69,6 +72,12 @@ packagelist=(
 
   # Adds history for node repl
   readline
+
+  # GA Git Extras
+  ga-git-extras
+
+  # GA WDI Extras
+  ga-wdi-extras
 )
 
 do_exec brew install ${packagelist[@]}
