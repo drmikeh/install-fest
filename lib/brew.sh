@@ -107,7 +107,7 @@ packagelist=(
 do_exec brew install ${packagelist[@]}
 
 # Brew Cask provides a way to install and update GUI apps from the command line
-do_exec brew install caskroom/cask/brew-cask
+# do_exec brew install caskroom/cask/brew-cask
 
 # A tap of previous versions of stuff
 do_exec brew tap homebrew/versions
