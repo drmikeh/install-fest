@@ -11,6 +11,11 @@ exec > >(tee $LOGFILE); exec 2>&1
 
 source "./lib/greeting.sh"
 
+# log_info "Testing failure"
+# source "./lib/fail.sh"
+# log_error "We should not get this far!"
+# exit 1;
+
 source "./lib/check_cl_tools.sh"
 
 source "./lib/github.sh"
