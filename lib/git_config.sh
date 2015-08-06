@@ -28,6 +28,6 @@ do_exec git config --global core.excludesfile ~/.gitignore_global
 do_exec git config --global credential.helper osxkeychain
 
 # Setup Some GIT Aliases
-do_exec "git alias g log --graph --all --branches --decorate --pretty=format:'[%C(auto)%h%Creset][%C(cyan)%an %ar%Creset]%C(auto)%d%Creset %s %C(auto)%Creset'"
-do_exec "git alias h log --all --decorate"
-do_exec "git alias ls log --stat --all --decoratedo_exec "
+do_exec git alias g "log --graph --all --branches --decorate --pretty=format:'[%C(auto)%h%Creset][%C(cyan)%an %ar%Creset]%C(auto)%d%Creset %s %C(auto)%Creset'"
+do_exec git alias h "log --all --decorate"
+do_exec git alias ls "log --stat --all --decoratedo_exec"
