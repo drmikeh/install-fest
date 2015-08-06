@@ -79,9 +79,6 @@ packagelist=(
   # A nice prompt for Bash and GIT repos
   bash-git-prompt
 
-  # Provides a way to install and update GUI apps from the command line
-  brew-cask
-
   # Extra GIT commands for General Assembly classes
   ga-git-extras
 
@@ -108,6 +105,9 @@ packagelist=(
 )
 
 do_exec brew install ${packagelist[@]}
+
+# Brew Cask provides a way to install and update GUI apps from the command line
+do_exec brew install caskroom/cask/brew-cask
 
 # A tap of previous versions of stuff
 do_exec brew tap homebrew/versions
