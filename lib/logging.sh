@@ -45,7 +45,7 @@ function log_error() {
 
 function pause() {
   echo ""
-  read -p "${BG_YELLOW}${BLACK}>>>>    $*. Press <Enter> to continue.${RESET}"
+  read -p "${BG_YELLOW}${BLACK}>>>>    $*. Press <Enter> to continue (Ctrl-C to quit).${RESET}"
 }
 
 function log_test() {

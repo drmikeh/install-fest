@@ -73,17 +73,47 @@ packagelist=(
   # Adds history for node repl
   readline
 
-  # GA Git Extras
+  # Bash command line completion
+  bash-completion
+
+  # A nice prompt for Bash and GIT repos
+  bash-git-prompt
+
+  # Provides a way to install and update GUI apps from the command line
+  brew-cask
+
+  # Extra GIT commands for General Assembly classes
   ga-git-extras
 
-  # GA WDI Extras
+  # Extra Bash Scripts for GA WDI Classes
   ga-wdi-extras
+
+  # Extra GIT commands that make life easier
+  git-extras
+
+  # Tools and libraries to manipulate images in many formats
+  imagemagick
+
+  # JPEG image manipulation library
+  jpeg
+
+  # High-performance, schema-free, document-oriented database
+  mongodb
+
+  # Relational database Mgmt system
+  postgresql
+
+  # Internet file retriever
+  wget
 )
 
 do_exec brew install ${packagelist[@]}
 
-# Tap a new formula repository from GitHub, or list existing taps.
+# A tap of previous versions of stuff
 do_exec brew tap homebrew/versions
+
+# A brew extension for starting and stopping services such as postgresql and mongodb
+do_exec brew tap homebrew/services
 
 # Ensures all tapped formula are symlinked into Library/Formula
 # and prunes dead formula from Library/Formula.

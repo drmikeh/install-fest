@@ -2,7 +2,7 @@ SECTION="NODE"
 log_banner "$SECTION"
 
 # TODO: replace with nvm
-# do_exec brew install node
+do_exec brew install node
 
 packageList=(
   # CLI tool for scaffolding out Yeoman projects
@@ -35,11 +35,14 @@ packageList=(
   # Fast, unopinionated, minimalist web framework
   express
 
-  # less
   gulp
+
   # browserify
+
   generator-gulp-webapp
   generator-gulp-angular
+
+  # Best MEAN Stack generator
   generator-angular-fullstack
 )
 

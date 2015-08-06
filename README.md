@@ -14,29 +14,21 @@
 
 ## How to Install
 
-Go to GitHub to download a zip file of this project.
+Use an internet browser to download a zip file of this project from GitHub:
 
-URL: [install-fest](https://github.com/drmikeh/install-fest)
-
-Alternatively, you can download the zip file from the terminal:
-
-```
-cd /tmp
-mkdir wdi
-cd wdi
-wget https://github.com/drmikeh/install-fest/archive/master.zip -O install-fest.zip
-```
+* URL: [https://github.com/drmikeh/install-fest](https://github.com/drmikeh/install-fest)
+* Click on the "Download ZIP" button on the right.
 
 ## How to Run
 
-From the terminal:
+From the terminal, cd to the directory containing the downloaded zip file:
 
 ```
-unzip install-fest.zip
-cd install-fest-0.1.0
+cd ~/Downloads
+unzip install-fest-master.zip   # Note that Safari unzips the file for you
+cd install-fest-master
 ./wdi.sh
 ```
-
 
 ## TODO:
 
