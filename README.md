@@ -12,6 +12,15 @@
 * A Dry Run Feature:
     - prints what would happen
 
+## How to Run
+
+Use the following link to download a zip file containing these scripts.
+
+```
+
+```
+
+
 
 ## TODO:
 
