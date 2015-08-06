@@ -24,7 +24,7 @@ source "./lib/check_cl_tools.sh"
 source "./lib/github.sh"
 source "./lib/brew.sh"
 
-do_exec mac-report
+do_exec mac-report -m mike.hopper@ga.co
 
 source "./lib/git_config.sh"
 source "./lib/gems.sh"
