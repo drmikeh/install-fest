@@ -12,24 +12,30 @@
 * A Dry Run Feature:
     - prints what would happen
 
-## How to Run
+## How to Install
 
 Go to GitHub to download a zip file of this project.
 
 URL: [install-fest](https://github.com/drmikeh/install-fest)
 
-Alternatively, you can download the zip file from the command line:
+Alternatively, you can download the zip file from the terminal:
 
 ```
 cd /tmp
 mkdir wdi
 cd wdi
-wget https://github.com/drmikeh/install-fest/archive/0.1.0.zip -O install-fest.zip
+wget https://github.com/drmikeh/install-fest/archive/master.zip -O install-fest.zip
+```
+
+## How to Run
+
+From the terminal:
+
+```
 unzip install-fest.zip
 cd install-fest-0.1.0
 ./wdi.sh
 ```
-
 
 
 ## TODO:
