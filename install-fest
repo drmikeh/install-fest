@@ -23,10 +23,15 @@ source "./lib/check_cl_tools.sh"
 
 source "./lib/github.sh"
 source "./lib/brew.sh"
+
+do_exec mac-report
+
 source "./lib/git_config.sh"
 source "./lib/gems.sh"
 source "./lib/ruby.sh"
 source "./lib/node.sh"
+
+do_exec wdi-init
 
 source "./lib/closing.sh"
 
