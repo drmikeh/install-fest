@@ -12,4 +12,11 @@
 
 ## TODO:
 
+* Improve prompts for password - be very clear as to which password to enter.
+* Prompt earlier for sudo password
+* Improve send_mail:
+  - Use real name from prompts instead of USER_NAME from whoami
+  - Use an attachment for the log file
+  - Generate HTML?
 * Add tests using Docker and VirtualBox
+* Support for Linux?
