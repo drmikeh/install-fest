@@ -20,3 +20,4 @@
   - Generate HTML?
 * Add tests using Docker and VirtualBox
 * Support for Linux?
+* How do we automatically add the students to our *ga-students* GitHub Organization?
