@@ -4,6 +4,7 @@ SECTION="CL TOOLS"
 log_banner "Checking Command Line Tools"
 
 case $OS_VERSION in
+  *10.11*) cmdline_version="CLTools_Executables" ;; # El Capitan
   *10.10*) cmdline_version="CLTools_Executables" ;; # Yosemite
   *10.9*)  cmdline_version="CLTools_Executables" ;; # Mavericks
   *10.8*)  cmdline_version="DeveloperToolsCLI"   ;; # Mountain Lion
