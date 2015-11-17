@@ -2,7 +2,14 @@ SECTION="NODE"
 log_banner "$SECTION"
 
 # TODO: replace with nvm
-do_exec brew install node
+# do_exec brew install node
+
+do_exec curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
+do_exec nvm install stable
+do_exec nvm use stable
 
 packageList=(
   # CLI tool for scaffolding out Yeoman projects
@@ -12,10 +19,10 @@ packageList=(
   generator-webapp
 
   # Yeoman generator for Backbone.js
-  generator-backbone
+  # generator-backbone
 
   # Yeoman generator for AngularJS
-  generator-angular
+  # generator-angular
 
   # The grunt command line interface.
   grunt-cli
@@ -39,11 +46,11 @@ packageList=(
 
   # browserify
 
-  generator-gulp-webapp
-  generator-gulp-angular
+  # generator-gulp-webapp
+  # generator-gulp-angular
 
   # Best MEAN Stack generator
-  generator-angular-fullstack
+  # generator-angular-fullstack
 
   jasmine-node
 
